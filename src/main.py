@@ -1,6 +1,3 @@
-import pygame
-import sys
-from services.grid_service import create_grid, draw_grid, create_inventory_grid, draw_inventory
 from models.plant import Plant
 from models.inventory import Inventory
 from models.game import Game
