@@ -22,7 +22,7 @@ def initialize_game_state():
     }
 
     inv = Inventory(max_size=8, current_items=current, selected_item_key="0", selected_item=current["0"]["plant"])
-    return PlayerState(starting_state=GameStates.MAIN_STATE.value, starting_inventory=inv)
+    return PlayerState(starting_state=GameStates.MAIN_MENU_STATE.value, starting_inventory=inv)
 
 
 if __name__ == '__main__':

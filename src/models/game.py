@@ -5,6 +5,7 @@ from src.enums.colors import Colors
 from src.services.collision_service import check_collision
 from src.models.player_state import PlayerState
 
+
 class Game:
     def __init__(self, window_dimensions: list, player_state: PlayerState):
         pygame.init()
