@@ -1,4 +1,4 @@
-from enums.colors import Colors
+from src.enums.colors import Colors
 
 
 def check_collision(grid: dict, mouse_pos: tuple) -> None:

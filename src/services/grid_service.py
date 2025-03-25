@@ -1,7 +1,7 @@
 import pygame
-from enums.colors import Colors
-from models.grid_square import GridSquare
-from models.inventory import InventoryUIBlock
+from src.enums.colors import Colors
+from src.models.grid_square import GridSquare
+from src.models.inventory import InventoryUIBlock
 
 
 def create_grid(window_dimensions):

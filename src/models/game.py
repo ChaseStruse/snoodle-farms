@@ -1,8 +1,8 @@
 import pygame
 import sys
-from services.grid_service import create_grid, draw_grid, create_inventory_grid, draw_inventory
-from enums.colors import Colors
-from services.collision_service import check_collision
+from src.services.grid_service import create_grid, draw_grid, create_inventory_grid, draw_inventory
+from src.enums.colors import Colors
+from src.services.collision_service import check_collision
 
 
 class Game:
