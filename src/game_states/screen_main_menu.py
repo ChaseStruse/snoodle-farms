@@ -40,4 +40,4 @@ def main_menu_screen(game):
         if event.type == pygame.MOUSEBUTTONDOWN:
             clicked = [s for s in buttons if s.get_rect_obj().collidepoint(mouse_pos)]
             if clicked:
-                game.player_state.state = clicked[0].state_represented
+                game.game_state.state = clicked[0].state_represented
