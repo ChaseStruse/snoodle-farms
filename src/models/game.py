@@ -19,17 +19,6 @@ class Game:
         self.clock = pygame.time.Clock()
         self.screen.fill(Colors.BLACK.value)
 
-    def perform_mouse_down_functionality(self, mouse_pos):
-        clicked = [s for s in self.grid.values() if s.get_rect_obj().collidepoint(mouse_pos)]
-        if clicked:
-            if clicked[0].plantable and not clicked[0].active:
-                if self.game_state.inventory.handle_quantity():
-                    self.inventory_grid[self.game_state.inventory.selected_item.name].quantity -= 1
-                    clicked[0].color = self.game_state.inventory.selected_item.color
-                    clicked[0].width = 20
-                    clicked[0].active = True
-                    clicked[0].plant = self.game_state.inventory.selected_item
-
     def run(self):
         while True:
             self.screen.fill(Colors.BLACK.value)
