@@ -1,3 +1,16 @@
+"""
+
+Main entry point for the game
+
+Responsibilities
+- Initialize the GameState
+    - Create initial inventory for the player to use at the start of a new game
+    - Sets the GameState to Main Menu
+
+- Initializes Game object
+- Runs the Game
+"""
+
 from models.plant import Plant
 from models.inventory import Inventory
 from models.game import Game

@@ -1,9 +1,16 @@
+"""
+Main Object for the game and its objects within it
+
+Responsibilities
+- Keeps track of the grids
+- Contains the main game loop
+"""
+
 import pygame
 import sys
-from src.services.grid_service import create_grid, draw_grid, create_inventory_grid, draw_inventory
+from src.services.grid_service import create_grid, create_inventory_grid
 from src.enums.colors import Colors
 from src.enums.game_states import GameStates
-from src.services.collision_service import check_collision
 from src.game_states.game_state import GameState
 
 
