@@ -2,7 +2,7 @@ import pygame
 from src.enums.game_states import GameStates
 from src.game_screens.screen_main_game import main_game_screen
 from src.game_screens.screen_shop import shop_screen
-from src.game_screens.screen_main_menu import draw_main_menu
+from src.game_screens.screen_main_menu import main_menu_screen
 
 class PlayerState:
     def __init__(self, starting_inventory, starting_state):
@@ -21,6 +21,6 @@ class PlayerState:
         if self.state == GameStates.SHOP_STATE.value:
             return shop_screen(game=game)
         if self.state == GameStates.MAIN_MENU_STATE.value:
-            return draw_main_menu(game=game)
+            return main_menu_screen(game=game)
 
 

@@ -2,6 +2,7 @@ import pygame
 import sys
 from src.services.grid_service import create_grid, draw_grid, create_inventory_grid, draw_inventory
 from src.enums.colors import Colors
+from src.enums.game_states import GameStates
 from src.services.collision_service import check_collision
 from src.models.player_state import PlayerState
 
@@ -37,9 +38,10 @@ class Game:
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
-                if event.type == pygame.KEYDOWN:
-                    pressed = pygame.key.get_pressed()
-                    self.player_state.manage_state(key_pressed=pressed)
+                if self.player_state.state != GameStates.MAIN_MENU_STATE:
+                    if event.type == pygame.KEYDOWN:
+                        pressed = pygame.key.get_pressed()
+                        self.player_state.manage_state(key_pressed=pressed)
 
             pygame.display.update()
             pygame.display.flip()
