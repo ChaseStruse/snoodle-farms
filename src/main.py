@@ -20,8 +20,8 @@ from enums.game_states import GameStates
 
 
 def initialize_game_state():
-    cactus = Plant(name="Cactus", color=Colors.CACTUS.value, quantity=1)
-    rose = Plant(name="Rose", color=Colors.ROSE.value, quantity=2)
+    cactus = Plant(name="Cactus", color=Colors.CACTUS.value, price=10)
+    rose = Plant(name="Rose", color=Colors.ROSE.value, price=11)
 
     current = {
         "0": {
