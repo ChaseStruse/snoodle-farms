@@ -10,3 +10,8 @@ class Colors(Enum):
     BLUE = (0, 0, 200)
     CACTUS = (175, 202, 158)
     ROSE = (255, 87, 51)
+    POTATO = (150, 75, 0)
+    CORN = (255, 255, 0)
+    TOMATO = (255, 99, 71)
+    ORANGE = (255, 165, 0)
+
